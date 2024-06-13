@@ -1,4 +1,4 @@
-import "../assets/styles/vercel-invite-user.css"
+import "../../assets/styles/vercel-invite-user.css"
 
 export default function(){
     return(
@@ -66,7 +66,7 @@ export default function(){
                                 >
                                     <a href="https://maizzle.com" >
                                         <img
-                                            src="https://react-email-demo-48zvx380u-resend.vercel.app/static/vercel-logo.png"
+                                            src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/dca73b36-cf39-4e28-9bc7-8a0d0cd8ac70/standalone-gradient2x_2/w=128,quality=90,fit=scale-down"
                                             width={40}
                                             alt="Maizzle"
                                             style={{marginLeft:"auto",marginRight:"auto"}}

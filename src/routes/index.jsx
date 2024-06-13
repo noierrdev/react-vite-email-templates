@@ -1,29 +1,39 @@
 import React from 'react'
 import { useRoutes } from "react-router-dom";
+import Default from '../layouts/Default';
 
 const IndexPage=React.lazy(()=>import("../pages/index"))
-const GithubAccessTokenPage=React.lazy(()=>import("../pages/github-access-token"))
-const VercelInviteUserPage=React.lazy(()=>import("../pages/vercel-invite-user"))
-const YelpRecentLoginPage=React.lazy(()=>import("../pages/yelp-recent-login"))
+const GithubAccessTokenPage=React.lazy(()=>import("../pages/notifications/github-access-token"))
+const VercelInviteUserPage=React.lazy(()=>import("../pages/notifications/vercel-invite-user"))
+const YelpRecentLoginPage=React.lazy(()=>import("../pages/notifications/yelp-recent-login"))
 
 const AppRoutes=(props)=>{
     const routes=[
         {
             path:"/",
-            element:<IndexPage {...props} />
+            element:<Default  />,
+            children:[
+                {
+                    path:"",
+                    element:<IndexPage/>
+                },
+                {
+                    path:"notifications/github-access-token",
+                    element:<GithubAccessTokenPage {...props} />
+                },
+                {
+                    path:"notifications/vercel-invite-user",
+                    element:<VercelInviteUserPage {...props} />
+                },
+                {
+                    path:"notifications/yelp-recent-login",
+                    element:<YelpRecentLoginPage {...props} />
+                }
+            ]
         },
-        {
-            path:"/github-access-token",
-            element:<GithubAccessTokenPage {...props} />
-        },
-        {
-            path:"/vercel-invite-user",
-            element:<VercelInviteUserPage {...props} />
-        },
-        {
-            path:"/yelp-recent-login",
-            element:<YelpRecentLoginPage {...props} />
-        }
+        
+        
+        
     ]
     return useRoutes(routes);
 }

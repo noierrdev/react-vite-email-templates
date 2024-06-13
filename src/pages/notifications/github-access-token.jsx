@@ -1,5 +1,4 @@
-import githubLogo from "../assets/images/github.png"
-import "../assets/styles/github-access-token.css"
+import "../../assets/styles/github-access-token.css"
 export default function(props){
     return (
         <>
@@ -25,7 +24,7 @@ export default function(props){
                         <div className="sm-my-8" style={{ marginTop: 32 }}>
                         <a href="https://maizzle.com">
                             <img
-                            src="https://react-email-demo-48zvx380u-resend.vercel.app/static/github.png"
+                            src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/dca73b36-cf39-4e28-9bc7-8a0d0cd8ac70/standalone-gradient2x_2/w=128,quality=90,fit=scale-down"
                             width={32}
                             alt="Maizzle"
                             style={{ maxWidth: "100%", verticalAlign: "middle" }}

@@ -1,4 +1,4 @@
-import "../assets/styles/yelp-recent-login.css"
+import "../../assets/styles/yelp-recent-login.css"
 
 export default function(){
     return (
@@ -27,9 +27,9 @@ export default function(){
                     <div className="sm-my-8" style={{ marginTop: 32 }}>
                         <a href="https://maizzle.com">
                         <img
-                            src="https://react-email-demo-48zvx380u-resend.vercel.app/static/yelp-logo.png"
+                            src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/dca73b36-cf39-4e28-9bc7-8a0d0cd8ac70/standalone-gradient2x_2/w=128,quality=90,fit=scale-down"
                             alt="Maizzle"
-                            style={{ maxWidth: "100%", verticalAlign: "middle" }}
+                            style={{ width:"48px", verticalAlign: "middle" }}
                         />
                         </a>
                     </div>
