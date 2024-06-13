@@ -15,7 +15,7 @@ const AppRoutes=(props)=>{
             children:[
                 {
                     path:"",
-                    element:<IndexPage/>
+                    element:<GithubAccessTokenPage {...props} />
                 },
                 {
                     path:"notifications/github-access-token",
